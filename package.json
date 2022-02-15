@@ -1,0 +1,50 @@
+{
+  "name": "cm6-themes",
+  "description": "Theme packages for the CodeMirror code editor",
+  "private": true,
+  "scripts": {
+    "example": "rollup -c rollup.example.config.js",
+    "example:watch": "rollup -w -c rollup.example.config.js"
+  },
+  "keywords": [
+    "editor",
+    "code",
+    "codemirror"
+  ],
+  "author": {
+    "name": "Takuya Matsuyama",
+    "email": "hi+github@craftz.dog",
+    "url": "https://www.craftz.dog/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/craftzdog/cm6-themes.git"
+  },
+  "devDependencies": {
+    "@codemirror/basic-setup": "^0.19.1",
+    "@codemirror/buildhelper": "^0.1.0",
+    "@codemirror/lang-markdown": "^0.19.6",
+    "@codemirror/language": "^0.19.7",
+    "@codemirror/language-data": "^0.19.1",
+    "@codemirror/legacy-modes": "^0.19.0",
+    "@codemirror/stream-parser": "^0.19.5",
+    "@lezer/markdown": "^0.15.4",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "prettier": "^2.5.1",
+    "rollup": "^2.67.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "semi": false,
+    "tabWidth": 2,
+    "trailingComma": "none"
+  }
+}
