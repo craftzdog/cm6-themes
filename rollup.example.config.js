@@ -1,6 +1,8 @@
+import path from 'path'
 import typescript from 'rollup-plugin-typescript2'
 import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
+import dev from 'rollup-plugin-dev'
 
 export default {
   input: './example/index.ts',
@@ -25,6 +27,10 @@ export default {
       }
     }),
     resolve(),
-    commonjs()
+    commonjs(),
+    dev({
+      dirs: ['example'],
+      port: 8000
+    })
   ]
 }
