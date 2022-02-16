@@ -4,7 +4,7 @@
 
 [ [**WEBSITE**](https://codemirror.net/6/) | [**ISSUES**](https://github.com/codemirror/codemirror.next/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/theme-one-dark/blob/main/CHANGELOG.md) ]
 
-This package implements the Solarized Light theme for the
+This package implements the [Solarized](https://ethanschoonover.com/solarized/) Light theme for the
 [CodeMirror](https://codemirror.net/6/) code editor.
 
 The [project page](https://codemirror.net/6/) has more information, a
