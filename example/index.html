@@ -2,9 +2,19 @@
 <html>
   <head>
     <script async type="module" src="./dist/index.js"></script>
+    <style>
+      #theme-picker {
+        margin: 1em;
+      }
+    </style>
   </head>
   <body>
     <h1>CodeMirror 6 example</h1>
+    <div id="theme-picker">
+      <label for="theme">Theme:</label>
+      <select id="theme-list" name="themes">
+      </select>
+    </div>
     <div>
       <div id="codemirror" />
     </div>
