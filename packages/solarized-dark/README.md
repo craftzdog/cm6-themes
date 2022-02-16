@@ -1,6 +1,6 @@
 <!-- NOTE: README.md is generated from src/README.md -->
 
-# cm6-theme-solarized-dark [![NPM version](https://img.shields.io/npm/v/@codemirror/theme-one-dark.svg)](https://www.npmjs.org/package/cm6-theme-solarized-dark)
+# cm6-theme-solarized-dark [![NPM version](https://img.shields.io/npm/v/cm6-theme-solarized-dark.svg)](https://www.npmjs.org/package/cm6-theme-solarized-dark)
 
 [ [**WEBSITE**](https://codemirror.net/6/) | [**ISSUES**](https://github.com/codemirror/codemirror.next/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/theme-one-dark/blob/main/CHANGELOG.md) ]
 
