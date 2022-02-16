@@ -1,6 +1,6 @@
 {
   "name": "cm6-theme-solarized-light",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Solarized Light theme for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
