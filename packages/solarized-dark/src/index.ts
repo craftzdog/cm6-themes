@@ -64,7 +64,7 @@ export const solarizedDarkTheme = EditorView.theme(
     },
 
     '.cm-gutters': {
-      backgroundColor: background,
+      backgroundColor: darkBackground,
       color: stone,
       border: 'none'
     },
