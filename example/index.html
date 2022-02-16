@@ -1,22 +1,65 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script async type="module" src="./dist/index.js"></script>
     <style>
+      * {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+      }
+
+      .home-menu {
+        background: #2d3e50;
+      }
+
+      .home-menu .pure-menu-heading {
+        color: white;
+        font-weight: 400;
+        font-size: 120%;
+      }
+
+      .home-menu .pure-menu-selected a.pure-menu-link {
+        color: white;
+      }
+
+      .home-menu a {
+        color: #6FBEF3;
+      }
+      .home-menu li a:hover,
+      .home-menu li a:focus {
+        background: none;
+        border: none;
+        color: #AECFE5;
+      }
+
       #theme-picker {
         margin: 1em;
       }
     </style>
   </head>
   <body>
-    <h1>CodeMirror 6 example</h1>
-    <div id="theme-picker">
-      <label for="theme">Theme:</label>
-      <select id="theme-list" name="themes">
-      </select>
-    </div>
-    <div>
+    <header>
+      <div class="home-menu pure-menu pure-menu-horizontal">
+          <a class="pure-menu-heading" href="">Themes for CodeMirror 6 Demo</a>
+
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected">
+              <a href="https://github.com/craftzdog/cm6-themes" class="pure-menu-link">GitHub repo</a>
+            </li>
+          </ul>
+      </div>
+      <div id="theme-picker">
+        <label for="theme">Theme:</label>
+        <select id="theme-list" name="themes">
+        </select>
+      </div>
+    </header>
+
+    <main>
       <div id="codemirror" />
-    </div>
+    </main>
   </body>
 </html>
