@@ -21,7 +21,7 @@ let editor = new EditorView({
         addKeymap: true,
         extensions: []
       }),
-      themeConfig.of([themes[0].extension])
+      themeConfig.of([themes[0]])
     ]
   }),
   parent: elCM
