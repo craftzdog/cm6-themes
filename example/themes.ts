@@ -3,6 +3,7 @@ import { basicDark } from '../packages/basic-dark'
 import { solarizedDark } from '../packages/solarized-dark'
 import { solarizedLight } from '../packages/solarized-light'
 import { materialDark } from '../packages/material-dark'
+import { nord } from '../packages/nord'
 
 const themes = [
   {
@@ -24,6 +25,10 @@ const themes = [
   {
     extension: materialDark,
     name: 'Material Dark'
+  },
+  {
+    extension: nord,
+    name: 'Nord'
   }
 ]
 
