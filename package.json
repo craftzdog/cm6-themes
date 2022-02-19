@@ -7,6 +7,7 @@
   "private": true,
   "scripts": {
     "clean": "rimraf ./packages/*/dist ./example/dist",
+    "watch": "node scripts/watch.js",
     "example": "rollup -c rollup.example.config.js",
     "example:watch": "rollup -w -c rollup.example.config.js",
     "prepare": "npm run -w '*' prepare"
