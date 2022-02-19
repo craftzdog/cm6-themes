@@ -140,7 +140,7 @@ export const nordHighlightStyle = HighlightStyle.define([
   },
   {
     tag: [t.number, t.changed, t.annotation, t.modifier, t.self, t.namespace],
-    color: base08
+    color: base0F
   },
   {
     tag: [t.typeName, t.className],
