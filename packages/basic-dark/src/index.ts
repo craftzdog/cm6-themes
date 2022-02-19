@@ -200,6 +200,7 @@ export const basicDarkHighlightStyle = HighlightStyle.define([
   {
     tag: [t.contentSeparator],
     color: base0D
+  },
   { tag: t.invalid, color: base02, borderBottom: `1px dotted ${invalid}` }
 ])
 
