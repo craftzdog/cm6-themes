@@ -49,7 +49,8 @@ export const basicDarkTheme = EditorView.theme(
 
     '.cm-searchMatch': {
       backgroundColor: base02,
-      outline: `1px solid ${base03}`
+      outline: `1px solid ${base03}`,
+      color: base07
     },
     '.cm-searchMatch.cm-searchMatch-selected': {
       backgroundColor: base05,

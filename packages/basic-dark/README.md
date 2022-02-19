@@ -1,10 +1,10 @@
 <!-- NOTE: README.md is generated from src/README.md -->
 
-# cm6-theme-solarized-light [![NPM version](https://img.shields.io/npm/v/cm6-theme-solarized-light.svg)](https://www.npmjs.org/package/cm6-theme-solarized-light)
+# cm6-theme-basic-dark [![NPM version](https://img.shields.io/npm/v/cm6-theme-basic-dark.svg)](https://www.npmjs.org/package/cm6-theme-basic-dark)
 
 [ [**WEBSITE**](https://codemirror.net/6/) | [**ISSUES**](https://github.com/codemirror/codemirror.next/issues) | [**FORUM**](https://discuss.codemirror.net/c/next/) | [**CHANGELOG**](https://github.com/codemirror/theme-one-dark/blob/main/CHANGELOG.md) ]
 
-This package implements the [Solarized](https://ethanschoonover.com/solarized/) Light theme for the
+This package implements the basic dark theme for the
 [CodeMirror](https://codemirror.net/6/) code editor.
 
 The [project page](https://codemirror.net/6/) has more information, a
@@ -21,8 +21,8 @@ to communication around the project.
 
 ## API Reference
 
-@solarizedLight
+@basicDark
 
-@solarizedLightTheme
+@basicDarkTheme
 
-@solarizedLightHighlightStyle
+@basicDarkHighlightStyle

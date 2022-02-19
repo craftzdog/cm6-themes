@@ -158,6 +158,12 @@ export const solarizedLightHighlightStyle = HighlightStyle.define([
   },
   { tag: [t.string], color: base_yellow },
   {
+    tag: t.link,
+    color: base_cyan,
+    textDecoration: 'underline',
+    textUnderlinePosition: 'under'
+  },
+  {
     tag: [t.url, t.escape, t.special(t.string)],
     color: base_yellow
   },
@@ -166,12 +172,6 @@ export const solarizedLightHighlightStyle = HighlightStyle.define([
   { tag: t.strong, fontWeight: 'bold', color: base01 },
   { tag: t.emphasis, fontStyle: 'italic', color: base_green },
   { tag: t.strikethrough, textDecoration: 'line-through' },
-  {
-    tag: t.link,
-    color: base_cyan,
-    textDecoration: 'underline',
-    textUnderlinePosition: 'under'
-  },
   { tag: t.heading, fontWeight: 'bold', color: base_yellow },
   { tag: t.heading1, fontWeight: 'bold', color: base03 },
   {
