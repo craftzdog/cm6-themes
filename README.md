@@ -5,6 +5,15 @@ Themes for CodeMirror 6
 
 Themes for [CodeMirror 6](https://codemirror.net/6/).
 
+## Available themes
+
+- [Basic Light](./packages/basic-light)
+- [Basic Dark](./packages/basic-dark)
+- [Solarized Light](./packages/solarized-light)
+- [Solarized Dark](./packages/solarized-dark)
+- [Material Dark](./packages/material-dark)
+- [Nord](./packages/nord)
+
 ## How to use
 
 ```js
