@@ -4,6 +4,8 @@ import { solarizedDark } from '../packages/solarized-dark'
 import { solarizedLight } from '../packages/solarized-light'
 import { materialDark } from '../packages/material-dark'
 import { nord } from '../packages/nord'
+import { gruvboxLight } from '../packages/gruvbox-light'
+import { gruvboxDark } from '../packages/gruvbox-dark'
 
 const themes = [
   {
@@ -29,6 +31,14 @@ const themes = [
   {
     extension: nord,
     name: 'Nord'
+  },
+  {
+    extension: gruvboxLight,
+    name: 'Gruvbox Light'
+  },
+  {
+    extension: gruvboxDark,
+    name: 'Gruvbox Dark'
   }
 ]
 
