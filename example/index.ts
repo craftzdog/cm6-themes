@@ -1,5 +1,4 @@
 import { EditorView, basicSetup } from 'codemirror'
-import { EditorState } from '@codemirror/state'
 import { markdown } from '@codemirror/lang-markdown'
 import { languages } from '@codemirror/language-data'
 import { markdownLanguage } from '@codemirror/lang-markdown'
@@ -12,19 +11,17 @@ const elCM = document.querySelector('#codemirror')
 const themeConfig = new Compartment()
 
 let editor = new EditorView({
-  state: EditorState.create({
-    doc: testDoc,
-    extensions: [
-      basicSetup,
-      markdown({
-        base: markdownLanguage,
-        codeLanguages: languages,
-        addKeymap: true,
-        extensions: []
-      }),
-      themeConfig.of([themes[0]])
-    ]
-  }),
+  doc: testDoc,
+  extensions: [
+    basicSetup,
+    markdown({
+      base: markdownLanguage,
+      codeLanguages: languages,
+      addKeymap: true,
+      extensions: []
+    }),
+    themeConfig.of([themes[0]])
+  ],
   parent: elCM
 })
 
