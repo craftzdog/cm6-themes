@@ -1,6 +1,6 @@
 {
   "name": "cm6-theme-basic-light",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Basic Light theme for the CodeMirror code editor",
   "scripts": {
     "test": "cm-runtests",
