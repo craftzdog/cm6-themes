@@ -5,6 +5,7 @@ import { markdownLanguage } from '@codemirror/lang-markdown'
 import { Compartment } from '@codemirror/state'
 import testDoc from './doc-example'
 import themes from './themes'
+import { codeblockTheme, codeblockPlugin } from './decorations'
 
 const elCM = document.querySelector('#codemirror')
 
@@ -20,7 +21,9 @@ let editor = new EditorView({
       addKeymap: true,
       extensions: []
     }),
-    themeConfig.of([themes[0]])
+    themeConfig.of([themes[0]]),
+    codeblockTheme,
+    codeblockPlugin
   ],
   parent: elCM
 })
