@@ -28,6 +28,7 @@
     "url": "https://github.com/craftzdog/cm6-themes.git"
   },
   "devDependencies": {
+    "@codemirror/buildhelper": "^0.1.16",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "prettier": "^2.7.0",
@@ -48,7 +49,6 @@
     "trailingComma": "none"
   },
   "dependencies": {
-    "@codemirror/buildhelper": "^0.1.16",
     "@codemirror/lang-markdown": "^6.0.0",
     "@codemirror/language": "^6.0.0",
     "@codemirror/language-data": "^6.0.0",
