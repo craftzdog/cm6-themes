@@ -1,6 +1,7 @@
 import { EditorView } from '@codemirror/view'
 import { Extension } from '@codemirror/state'
-import { HighlightStyle, tags as t } from '@codemirror/highlight'
+import { HighlightStyle, syntaxHighlighting } from '@codemirror/language'
+import { tags as t } from '@lezer/highlight'
 
 const base00 = '#2E3235',
   base01 = '#DDDDDD',
@@ -206,4 +207,7 @@ export const basicDarkHighlightStyle = HighlightStyle.define([
 
 /// Extension to enable the Basic Dark theme (both the editor theme and
 /// the highlight style).
-export const basicDark: Extension = [basicDarkTheme, basicDarkHighlightStyle]
+export const basicDark: Extension = [
+  basicDarkTheme,
+  syntaxHighlighting(basicDarkHighlightStyle)
+]

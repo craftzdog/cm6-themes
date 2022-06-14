@@ -1,4 +1,5 @@
-import { EditorState, EditorView, basicSetup } from '@codemirror/basic-setup'
+import { EditorView, basicSetup } from 'codemirror'
+import { EditorState } from '@codemirror/state'
 import { markdown } from '@codemirror/lang-markdown'
 import { languages } from '@codemirror/language-data'
 import { markdownLanguage } from '@codemirror/lang-markdown'

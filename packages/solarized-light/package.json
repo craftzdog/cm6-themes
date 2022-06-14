@@ -26,9 +26,10 @@
   "sideEffects": false,
   "license": "MIT",
   "peerDependencies": {
-    "@codemirror/highlight": "^0.19.7",
-    "@codemirror/state": "^0.19.6",
-    "@codemirror/view": "^0.19.40"
+    "@lezer/highlight": "^1.0.0",
+    "@codemirror/language": "^6.0.0",
+    "@codemirror/state": "^6.0.0",
+    "@codemirror/view": "^6.0.0"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^0.1.0"

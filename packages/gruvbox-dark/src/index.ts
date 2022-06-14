@@ -1,6 +1,7 @@
 import { EditorView } from '@codemirror/view'
 import { Extension } from '@codemirror/state'
-import { HighlightStyle, tags as t } from '@codemirror/highlight'
+import { HighlightStyle, syntaxHighlighting } from '@codemirror/language'
+import { tags as t } from '@lezer/highlight'
 
 const dark0 = '#282828',
   dark1 = '#3c3836',
@@ -245,5 +246,5 @@ export const gruvboxDarkHighlightStyle = HighlightStyle.define([
 /// the highlight style).
 export const gruvboxDark: Extension = [
   gruvboxDarkTheme,
-  gruvboxDarkHighlightStyle
+  syntaxHighlighting(gruvboxDarkHighlightStyle)
 ]

@@ -1,6 +1,7 @@
 import { EditorView } from '@codemirror/view'
 import { Extension } from '@codemirror/state'
-import { HighlightStyle, tags as t } from '@codemirror/highlight'
+import { HighlightStyle, syntaxHighlighting } from '@codemirror/language'
+import { tags as t } from '@lezer/highlight'
 
 // Colors from https://www.nordtheme.com/docs/colors-and-palettes
 // Polar Night
@@ -210,4 +211,7 @@ export const basicLightHighlightStyle = HighlightStyle.define([
 
 /// Extension to enable the Basic Light theme (both the editor theme and
 /// the highlight style).
-export const basicLight: Extension = [basicLightTheme, basicLightHighlightStyle]
+export const basicLight: Extension = [
+  basicLightTheme,
+  syntaxHighlighting(basicLightHighlightStyle)
+]
