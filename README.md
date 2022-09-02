@@ -34,5 +34,29 @@ let editor = new EditorView({
 })
 ```
 
+## Changing to block cursor 
+
+```ts
+//index.ts
+
+//...
+
+export const solarizedDarkTheme = EditorView.theme(
+  {
+    '&': {
+      color: base05,
+      backgroundColor: background
+    },
+
+    '.cm-content': {
+      caretColor: cursor
+    },
+
+    '.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor }, //remove this line or comment it out
+    '.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor, borderLeft: "0px solid", borderRight: "0.6em solid", opacity: "0.7" }, //uncomment this line
+
+//...
+```
+
 Read [the CodeMirror documentation](https://codemirror.net/6/examples/styling/) for more detail about themes.
 
