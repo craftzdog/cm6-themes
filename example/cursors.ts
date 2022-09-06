@@ -6,22 +6,22 @@ const base01 = '#DDDDDD';
 const cursor = base01;
 
 //default cursor 
-export const defaultCursor = EditorView.theme({
+const defaultCursor = EditorView.theme({
     '.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor }
 });
 
 //block cursor
-export const blockCursor = EditorView.theme({
+const blockCursor = EditorView.theme({
     '.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor, borderLeft: "0px solid", borderRight: "0.6em solid", opacity: "0.7" }
 });
 
 //default cursor extension
-export const defaultCursorMod: Extension = [
+const defaultCursorMod: Extension = [
     defaultCursor, 
 ];
   
 //block cursor extension
-export const blockCursorMod: Extension = [
+const blockCursorMod: Extension = [
     blockCursor,
 ];
 
