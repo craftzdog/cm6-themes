@@ -42,7 +42,6 @@ export const solarizedDarkTheme = EditorView.theme(
     },
 
     '.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor },
-    //Block cursor. Make sure to comment out or remove default cursor styles before using
     //'.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor, borderLeft: "0px solid", borderRight: "0.6em solid", opacity: "0.7" },
     '&.cm-focused .cm-selectionBackground, .cm-selectionBackground, .cm-content ::selection':
       { backgroundColor: selection },
