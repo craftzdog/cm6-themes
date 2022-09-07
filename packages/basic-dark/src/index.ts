@@ -41,7 +41,6 @@ export const basicDarkTheme = EditorView.theme(
     },
 
     '.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor },
-    //'.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor, borderLeft: "0px solid", borderRight: "0.6em solid", opacity: "0.7" },
     '&.cm-focused .cm-selectionBackground, .cm-selectionBackground, .cm-content ::selection':
       { backgroundColor: selection },
 
