@@ -53,7 +53,7 @@ export const solarizedDarkTheme = EditorView.theme(
     },
     //remove default cursor styles or comment it out
     '.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor }, 
-    //then uncomment block cursor styles
+    //then add block cursor styles
     '.cm-cursor, .cm-dropCursor': { borderLeftColor: cursor, borderLeft: "0px solid", borderRight: "0.6em solid", opacity: "0.7" },
 
 //...
