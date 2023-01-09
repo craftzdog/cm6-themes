@@ -32,7 +32,7 @@ const invalid = '#d30102',
   darkBackground = base06,
   highlightBackground = darkBackground,
   background = '#ffffff',
-  tooltipBackground = base01,
+  tooltipBackground = base05,
   selection = darkBackground,
   cursor = base01
 
