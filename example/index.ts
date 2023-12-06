@@ -5,10 +5,12 @@ import { markdownLanguage } from '@codemirror/lang-markdown'
 import { Compartment } from '@codemirror/state'
 import testDoc from './doc-example'
 import themes from './themes'
+import { cursors } from './cursors'
 
 const elCM = document.querySelector('#codemirror')
 
 const themeConfig = new Compartment()
+const cursorConfig = new Compartment()
 
 let editor = new EditorView({
   doc: testDoc,
@@ -20,9 +22,10 @@ let editor = new EditorView({
       addKeymap: true,
       extensions: []
     }),
-    themeConfig.of([themes[0]])
+    themeConfig.of([themes[0]]),
+    cursorConfig.of([cursors[0]])
   ],
-  parent: elCM
+  parent: (elCM as HTMLElement)
 })
 
 const elList = document.querySelector('#theme-list')
@@ -43,6 +46,26 @@ if (elList) {
       })
     }
   })
+}
+
+const cursorList = document.querySelector('#cursor-list');
+if(cursorList) {
+  for(let i = 0; i < cursors.length; i++) {
+    const cursorItem = document.createElement('option') as HTMLOptionElement;
+    cursorItem.setAttribute('value', i.toString());
+    cursorItem.textContent = cursors[i].cursor;
+    cursorList.appendChild(cursorItem);
+  }
+
+  cursorList.addEventListener('change', (e) => {
+    if(e.currentTarget instanceof HTMLSelectElement) {
+      const i = Number(e.currentTarget.value);
+
+      editor.dispatch({
+        effects: cursorConfig.reconfigure(cursors[i])
+      });
+    }
+  });
 }
 
 export default editor
