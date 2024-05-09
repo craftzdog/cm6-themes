@@ -8,8 +8,8 @@
   "scripts": {
     "clean": "rimraf ./packages/*/dist ./example/dist",
     "watch": "node scripts/watch.js",
-    "example": "rollup -c rollup.example.config.js",
-    "example:watch": "rollup -w -c rollup.example.config.js",
+    "example": "rollup -c rollup.example.config.mjs",
+    "example:watch": "rollup -w -c rollup.example.config.mjs",
     "prepare": "npm run -w '*' prepare"
   },
   "keywords": [
@@ -28,16 +28,16 @@
     "url": "https://github.com/craftzdog/cm6-themes.git"
   },
   "devDependencies": {
-    "@codemirror/buildhelper": "^0.1.16",
-    "@rollup/plugin-commonjs": "^22.0.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "prettier": "^2.7.0",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.75.6",
+    "@codemirror/buildhelper": "^1.0.1",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.17.2",
     "rollup-plugin-dev": "^2.0.4",
-    "rollup-plugin-typescript2": "^0.32.1",
-    "ts-node": "^10.8.1",
-    "typescript": "^4.7.3"
+    "rollup-plugin-typescript2": "^0.36.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   },
   "prettier": {
     "arrowParens": "avoid",
@@ -49,11 +49,11 @@
     "trailingComma": "none"
   },
   "dependencies": {
-    "@codemirror/lang-markdown": "^6.0.0",
-    "@codemirror/language": "^6.0.0",
-    "@codemirror/language-data": "^6.0.0",
-    "@codemirror/legacy-modes": "^6.0.0",
-    "@lezer/markdown": "^1.0.0",
-    "codemirror": "^6.0.0"
+    "@codemirror/lang-markdown": "^6.2.5",
+    "@codemirror/language": "^6.10.1",
+    "@codemirror/language-data": "^6.5.1",
+    "@codemirror/legacy-modes": "^6.4.0",
+    "@lezer/markdown": "^1.3.0",
+    "codemirror": "^6.0.1"
   }
 }

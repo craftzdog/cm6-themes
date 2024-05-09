@@ -1,4 +1,4 @@
-const { watch } = require('@codemirror/buildhelper')
+const { watch } = require('@marijn/buildtool')
 const { resolve } = require('path')
 const fs = require('fs')
 
